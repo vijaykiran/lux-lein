@@ -10,8 +10,7 @@
             :url "https://www.mozilla.org/en-US/MPL/2.0/"}
   :scm {:name "git"
         :url "https://github.com/LuxLang/lein-luxc"}
-  :dependencies [[org.clojure/clojure "1.6.0"]
-                 [org.apache.commons/commons-compress "1.10"]]
+  :dependencies [[org.clojure/clojure "1.6.0"]]
   :signing {:gpg-key "eduardoejp@gmail.com"}
   :deploy-repositories [["clojars" {:creds :gpg}]]
   :eval-in :leiningen)

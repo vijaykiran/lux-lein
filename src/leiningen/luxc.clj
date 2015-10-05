@@ -7,7 +7,6 @@
   (:require [leiningen.pom :as pom]
             [leiningen.core.classpath :as classpath]
             (leiningen.luxc [compiler :as &compiler]
-                            [deps :as &deps]
                             [package :as &package]
                             [install :as &install]
                             [deploy :as &deploy]))
@@ -28,7 +27,7 @@
     "deploy"
     (if-let [where (second args)]
       (&deploy/deploy project where)
-      (println "[Error] You must specify where they deployment is to be done..."))
+      (println "[Error] You must specify where the deployment is to be done..."))
 
     ;; default...
     (println "Commands available: compile, install, deploy"))
